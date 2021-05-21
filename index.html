@@ -7,14 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
 </head>
-<!--У всех лого и иконок пустые alt сказали в лайве что так норм. Я решил что создавать для каждого слайда новую страницу будет глупо - поэтому не стал этого делать, а потом реализую через  css и js слайдер-->
-<!--Неудержался и добавил картинки-->
-<!--Временный стиль для видимости всех белых иконок и логотипов-->
 <body style="background: radial-gradient(circle closest-side at 50% 358px, #EFE0DA, #9D8B84);">
     <header class="header">
         <nav class="header__navigation">
-            <!-- 3.2. Логотип не является пунктом меню. Его нужно размечать отдельным элементом. - Пункт меню это же <li> получается что нам нужно его поставить просто выше меню-->
-            <!-- Index: 3.8. Логотип не является ссылкой. -->
             <img class="logo" src="img/logo.svg" width="154" height="64" alt="">
             <ul class="header__list">
                 <li class="header__item"><a class="header__item-link" href="catalog.html">Каталог</a></li>
@@ -28,7 +23,6 @@
             <li class="header__element"><a class="header__element-link" href="blank.html">Пусто</a></li>
         </ul>
         <p class="header__info">
-            <!--Интересный момент, лучше время работы в <p> закинуть или так хорошо?-->
             с 10 до 20, ежедневно<br>
             <a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a>
         </p>
@@ -39,13 +33,11 @@
             <h2>Лучшее комбо</h2>
             <ul class="carousel__list">
                 <li class="carousel__item">
-                    <!-- Не заголовок потому что содержание. -->
                     <p class="carousel__item-name">Пломбир с помадкой и клубничный щербет</p>
                     <button class="btn carousel__btn" type="button">Давайте оба!</button>
                 </li>
             </ul>
             <ul class="carousel__dots">
-                <!--Временная разметка точек-->
                 <li class="carousel__dot"><a class="carousel__dot-link" href="#">○</a></li>
                 <li class="carousel__dot"><a class="carousel__dot-link" href="#">○</a></li>
                 <li class="carousel__dot"><a class="carousel__dot-link">●</a></li>
@@ -60,7 +52,6 @@
                         При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
                         банку малинового варенья бесплатно.
                     </p>
-                    <!--comment = Раздумывал лучше сделать кнопкой или ссылкой, но остановился на ссылке так как оно скорее всего будет перекидывать в каталог с товарами-->
                     <a class="btn" href="catalog.html">Хочу варенье!</a>
                 </li>
                 <li class="promotions__item">
@@ -69,7 +60,6 @@
                         При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
                         совершенно бесплатно.
                     </p>
-                    <!--comment-->
                     <a class="btn" href="catalog.html">Хочу шоколадки!</a>
                 </li>
             </ul>
@@ -78,40 +68,29 @@
             <h2 class="hot__title">Самые "горячие" предложения</h2>
             <ul class="hot__list">
                 <li class="hot__product">
-                    <!--Думал нужен ли здесь <figure>, но я думаю для товара важно изображение - чтобы покупатель мог оценить и чаще всего это влияет на выбор покупателя. - поэтому решил вставить <figure> Так как изображение достаточно важная часть-->
-                    <figure class="hot__content">
-                        <!--Хит и цену реализуем через псевдоэлемент, хотя зачем я тогда dots в слайдере размечал))))-->
-                        <img class="hot__product-img" src="img/product1.png" width="267" height="267" alt="мороженка">
-                        <p class="hot__product-price">310 ₽<span>/кг</span></p>
-                        <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
-                    </figure>
+                    <img class="hot__product-img" src="img/product1.png" width="267" height="267" alt="мороженка">
+                    <p class="hot__product-price">310 ₽<span>/кг</span></p>
+                    <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 </li>
                 <li class="hot__product">
-                    <figure class="hot__content">
-                        <img class="hot__product-img" src="img/product2.png" width="267" height="267" alt="мороженка">
-                        <p class="hot__product-price">380 ₽<span>/кг</span></p>
-                        <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
-                    </figure>
+                    <img class="hot__product-img" src="img/product2.png" width="267" height="267" alt="мороженка">
+                    <p class="hot__product-price">380 ₽<span>/кг</span></p>
+                    <h3>Сливочно-кофейное с кусочками шоколада</h3>
                 </li>
                 <li class="hot__product">
-                    <figure class="hot__content">
-                        <img class="hot__product-img" src="img/product3.png" width="267" height="267" alt="мороженка">
-                        <p class="hot__product-price">355 ₽<span>/кг</span></p>
-                        <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
-                    </figure>
+                    <img class="hot__product-img" src="img/product3.png" width="267" height="267" alt="мороженка">
+                    <p class="hot__product-price">355 ₽<span>/кг</span></p>
+                    <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 </li>
                 <li class="hot__product">
-                    <figure class="hot__content">
-                        <img class="hot__product-img" src="img/product4.png" width="267" height="267" alt="мороженка">
-                        <p class="hot__product-price">415 ₽<span>/кг</span></p>
-                        <figcaption>Сливочное крем-брюле с карамельной подливкой </figcaption>
-                    </figure>
+                    <img class="hot__product-img" src="img/product4.png" width="267" height="267" alt="мороженка">
+                    <p class="hot__product-price">415 ₽<span>/кг</span></p>
+                    <h3>Сливочное крем-брюле с карамельной подливкой </h3>
                 </li>
             </ul>
         </section>
         <section class="about">
             <h2>О нас</h2>
-            <!--Содержание а не заголовок-->
             <p class="about__description">
                 Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
                 собственного производства на развес
@@ -143,9 +122,7 @@
                 </li>
             </ul>
         </section>
-        <!--article потому что в статье <article> )))))). Контент независимый-->
         <article class="blog">
-            <!--Скорее всего блок должен быть весь кликабельный и вести на статью, можно реализовать через css-->
             <h2 class="blog__title">Блог</h2>
             <p>Новое в нашем блоге</p>
             <a href="blank.html">10 способов сервировки фруктовых щербетов к столу</a>
@@ -162,7 +139,6 @@
                 <button class="btn" type="submit">Отправить</button>
             </form>
         </section>
-        <!--Заглушка для карты-->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.980722507085!2d30.317423697503393!3d59.96839176933794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1621556772844!5m2!1sru!2sru"
             width="1200" height="430" style="border:0;" allowfullscreen="" loading="lazy">
@@ -174,13 +150,12 @@
                 <li class="info__item">
                     <p class="info__text">
                         Адрес главного офиса<br>
-                        и офлайн-магазина:<br>
-                        <a class="info__address" href="https://goo.gl/maps/de19LNMDBnQ167ZZA">
-                            <!--Скорее всего будет вести на местоположение на карте-->
-                            наб. Реки Карповки,<br>
-                            5 лит П, Санкт-Петербург
-                        </a>
+                        и офлайн-магазина:
                     </p>
+                    <a class="info__address" href="https://goo.gl/maps/de19LNMDBnQ167ZZA">
+                        наб. Реки Карповки,<br>
+                        5 лит П, Санкт-Петербург
+                    </a>
                 </li>
                 <li class="info__item">
                     <p class="info__text">
