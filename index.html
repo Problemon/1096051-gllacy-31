@@ -10,11 +10,11 @@
 <body style="background: radial-gradient(circle closest-side at 50% 358px, #EFE0DA, #9D8B84);">
     <header class="header">
         <nav class="header__navigation">
-            <img class="logo" src="img/logo.svg" width="154" height="64" alt="">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__item-link" href="catalog.html">Каталог</a></li>
-                <li class="header__item"><a class="header__item-link" href="blank.html">Доставка и оплата</a></li>
-                <li class="header__item"><a class="header__item-link" href="blank.html">О компании</a></li>
+            <img class="logo-img" src="img/logo.svg" width="154" height="64" alt="">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__item-link" href="catalog.html">Каталог</a></li>
+                <li class="menu__item"><a class="menu__item-link" href="blank.html">Доставка и оплата</a></li>
+                <li class="menu__item"><a class="menu__item-link" href="blank.html">О компании</a></li>
             </ul>
         </nav>
         <ul class="header__menu">
@@ -28,9 +28,9 @@
         </p>
     </header>
     <main class="main">
-        <h1>Магазин мороженного "Глейси"</h1>
+        <h1 class="main__title">Магазин мороженного "Глейси"</h1>
         <section class="carousel">
-            <h2>Лучшее комбо</h2>
+            <h2 class="carousel__title">Лучшее комбо</h2>
             <ul class="carousel__list">
                 <li class="carousel__item">
                     <p class="carousel__item-name">Пломбир с помадкой и клубничный щербет</p>
@@ -64,33 +64,33 @@
                 </li>
             </ul>
         </section>
-        <section class="hot">
-            <h2 class="hot__title">Самые "горячие" предложения</h2>
-            <ul class="hot__list">
-                <li class="hot__product">
-                    <img class="hot__product-img" src="img/product1.png" width="267" height="267" alt="мороженка">
-                    <p class="hot__product-price">310 ₽<span>/кг</span></p>
-                    <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+        <section class="products">
+            <h2 class="products__title">Самые "горячие" предложения</h2>
+            <ul class="products__list">
+                <li class="product hot__product">
+                    <img class="product__img" src="img/product1.png" width="267" height="267" alt="мороженка">
+                    <p class="product__price">310 ₽<span>/кг</span></p>
+                    <h3 class="product__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 </li>
-                <li class="hot__product">
-                    <img class="hot__product-img" src="img/product2.png" width="267" height="267" alt="мороженка">
-                    <p class="hot__product-price">380 ₽<span>/кг</span></p>
-                    <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                <li class="product hot__product">
+                    <img class="product__img" src="img/product2.png" width="267" height="267" alt="мороженка">
+                    <p class="product__price">380 ₽<span>/кг</span></p>
+                    <h3 class="product__title">Сливочно-кофейное с кусочками шоколада</h3>
                 </li>
-                <li class="hot__product">
-                    <img class="hot__product-img" src="img/product3.png" width="267" height="267" alt="мороженка">
-                    <p class="hot__product-price">355 ₽<span>/кг</span></p>
-                    <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <li class="product hot__product">
+                    <img class="product__img" src="img/product3.png" width="267" height="267" alt="мороженка">
+                    <p class="product__price">355 ₽<span>/кг</span></p>
+                    <h3 class="product__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 </li>
-                <li class="hot__product">
-                    <img class="hot__product-img" src="img/product4.png" width="267" height="267" alt="мороженка">
-                    <p class="hot__product-price">415 ₽<span>/кг</span></p>
-                    <h3>Сливочное крем-брюле с карамельной подливкой </h3>
+                <li class="product hot__product">
+                    <img class="product__img" src="img/product4.png" width="267" height="267" alt="мороженка">
+                    <p class="product__price">415 ₽<span>/кг</span></p>
+                    <h3 class="product__title">Сливочное крем-брюле с карамельной подливкой </h3>
                 </li>
             </ul>
         </section>
         <section class="about">
-            <h2>О нас</h2>
+            <h2 class="about__title">О нас</h2>
             <p class="about__description">
                 Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
                 собственного производства на развес
@@ -124,8 +124,8 @@
         </section>
         <article class="blog">
             <h2 class="blog__title">Блог</h2>
-            <p>Новое в нашем блоге</p>
-            <a href="blank.html">10 способов сервировки фруктовых щербетов к столу</a>
+            <p class="blog__text">Новое в нашем блоге</p>
+            <a class="blog__link" href="blank.html">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
         <section class="mailing">
             <h2 class="mailing__title">Рассылка</h2>
@@ -134,18 +134,18 @@
                 происходит.
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" name="email" placeholder="email@example.com">
+            <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="input" type="email" name="email" placeholder="email@example.com">
                 <button class="btn" type="submit">Отправить</button>
             </form>
         </section>
-        <iframe
+        <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.980722507085!2d30.317423697503393!3d59.96839176933794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1621556772844!5m2!1sru!2sru"
             width="1200" height="430" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
 
         <section class="info">
-            <h2>Контакты</h2>
+            <h2 class="info__title">Контакты</h2>
             <ul class="info__list">
                 <li class="info__item">
                     <p class="info__text">
@@ -170,10 +170,10 @@
     </main>
     <footer class="footer">
         <ul class="footer__socials">
-            <li class="footer__social"><a class="footer__social-link" href="blank.html"><img class="footer__social-icon" src="img/icons/facebook.svg" alt="" width="32" height="32"></a></li>
-            <li class="footer__social"><a class="footer__social-link" href="blank.html"><img class="footer__social-icon" src="img/icons/vk.svg" alt="" width="32" height="32"></a></li>
-            <li class="footer__social"><a class="footer__social-link" href="blank.html"><img class="footer__social-icon" src="img/icons/instagram.svg" alt="" width="32" height="32"></a></li>
-            <li class="footer__social"><a class="footer__social-link" href="blank.html"><img class="footer__social-icon" src="img/icons/twitter.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/facebook.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/vk.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/instagram.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/twitter.svg" alt="" width="32" height="32"></a></li>
         </ul>
         <ul class="footer__info">
             <li class="footer__info-item"><a class="footer__info-link" href="blank.html">Для поставщиков</a></li>
