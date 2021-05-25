@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body style="background: radial-gradient(circle closest-side at 50% 358px, #EFE0DA, #9D8B84);">
     <header class="header">
         <nav class="header__navigation">
-            <img class="logo-img" src="img/logo.svg" width="154" height="64" alt="">
+            <a class="logo-link"><img class="logo-img" src="img/logo.svg" width="154" height="64" alt=""></a>
             <ul class="menu">
                 <li class="menu__item"><a class="menu__item-link" href="catalog.html">Каталог</a></li>
                 <li class="menu__item"><a class="menu__item-link" href="blank.html">Доставка и оплата</a></li>
@@ -22,10 +27,8 @@
             <li class="header__element"><a class="header__element-link" href="blank.html">Вход</a></li>
             <li class="header__element"><a class="header__element-link" href="blank.html">Пусто</a></li>
         </ul>
-        <p class="header__info">
-            с 10 до 20, ежедневно<br>
-            <a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a>
-        </p>
+        <p class="header__info">с 10 до 20, ежедневно</p>
+        <address class="header__address"><a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a></address>
     </header>
     <main class="main">
         <h1 class="main__title">Магазин мороженного "Глейси"</h1>
@@ -68,22 +71,22 @@
             <h2 class="products__title">Самые "горячие" предложения</h2>
             <ul class="products__list">
                 <li class="product product--hot">
-                    <img class="product__img" src="img/product_orange.png" width="267" height="267" alt="мороженка">
+                    <img class="product__img" src="img/catalog/product_orange.jpg" width="267" height="267" alt="Бело-ораньжевое мороженное смешанное с цитрусовой стружкой">
                     <p class="product__price">310 ₽<span>/кг</span></p>
                     <h3 class="product__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 </li>
                 <li class="product product--hot">
-                    <img class="product__img" src="img/product_coffee_chocolate.png" width="267" height="267" alt="мороженка">
+                    <img class="product__img" src="img/catalog/product_coffee_chocolate.jpg" width="267" height="267" alt="Мороженное коричневого цвета присыпанное маленькими кусочками черного шоколада">
                     <p class="product__price">380 ₽<span>/кг</span></p>
                     <h3 class="product__title">Сливочно-кофейное с кусочками шоколада</h3>
                 </li>
                 <li class="product product--hot">
-                    <img class="product__img" src="img/product_strawberry.png" width="267" height="267" alt="мороженка">
+                    <img class="product__img" src="img/catalog/product_strawberry.jpg" width="267" height="267" alt="Розовое мороженное посыпанное шоколадными сердечками белого и розового цвета сверху">
                     <p class="product__price">355 ₽<span>/кг</span></p>
                     <h3 class="product__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 </li>
                 <li class="product product--hot">
-                    <img class="product__img" src="img/product_cream.png" width="267" height="267" alt="мороженка">
+                    <img class="product__img" src="img/catalog/product_cream.jpg" width="267" height="267" alt="Мороженное золтисто-корчиневого цвета политое карамелью">
                     <p class="product__price">415 ₽<span>/кг</span></p>
                     <h3 class="product__title">Сливочное крем-брюле с карамельной подливкой </h3>
                 </li>
@@ -170,10 +173,10 @@
     </main>
     <footer class="footer">
         <ul class="footer__socials">
-            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/facebook.svg" alt="" width="32" height="32"></a></li>
-            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/vk.svg" alt="" width="32" height="32"></a></li>
-            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/instagram.svg" alt="" width="32" height="32"></a></li>
-            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/icons/twitter.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/socials/facebook.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/socials/vk.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/socials/instagram.svg" alt="" width="32" height="32"></a></li>
+            <li class="social"><a class="social__link" href="blank.html"><img class="social__icon" src="img/socials/twitter.svg" alt="" width="32" height="32"></a></li>
         </ul>
         <ul class="footer__info">
             <li class="footer__info-item"><a class="footer__info-link" href="blank.html">Для поставщиков</a></li>
@@ -184,7 +187,7 @@
         </ul>
         <p class="copy">
             <a class="copy__link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="copy__logo" src="img/icons/htmlacademy.svg" alt="">
+                <img class="copy__logo" src="img/decorations/htmlacademy.svg" alt="">
             </a><br>
             Сделано в <a class="copy__link-text" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2021
         </p>
