@@ -2,52 +2,106 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>HTML Academy: Глейси</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="blank-body">
     <header class="header">
-        <nav class="header__navigation">
-            <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.svg" width="154" height="64" alt=""></a>
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__item-link" href="catalog.html">Каталог</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="blank.html">Доставка и оплата</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="blank.html">О компании</a></li>
-            </ul>
-        </nav>
-        <ul class="header__list">
-            <li class="header__element"><a class="header__element-link" href="blank.html">🔍</a></li>
-            <li class="header__element"><a class="header__element-link" href="blank.html">Вход</a></li>
-            <li class="header__element"><a class="header__element-link" href="blank.html">Пусто</a></li>
-        </ul>
-        <p class="header__info">с 10 до 20, ежедневно<br></p>
-        <address class="header__address"><a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a></address>
+        <div class="container">
+            <nav class="header__navigation">
+                <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.svg" width="154" height="64" alt=""></a>
+                <ul class="menu">
+                    <li class="menu__item menu__item--submenu">
+                        <a class="menu__item-link" href="catalog.html"><span class="link--unhover">Каталог</span></a>
+                        <ul class="menu__sub-menu">
+                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item--header" href="blank.html">Новинки</a></li>
+                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="catalog.html">Сливочное</a></li>
+                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="blank.html">Щербеты</a></li>
+                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="blank.html">Фруктовый лед</a></li>
+                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item--footer" href="blank.html">Мелорин</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__item-link" href="blank.html"><span class="link--unhover">Доставка и оплата</span></a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="blank.html"><span class="link--unhover">О компании</span></a></li>
+                </ul>
+                <ul class="header__menu">
+                    <li class="header__element">
+                        <button class="header__element-btn header__element-btn--padding" type="button">
+                            <svg class="header__element-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="header__element-icon--fill" d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/></svg>
+                            <span class="visually-hidden">Поиск</span>
+                        </button>
+                        <div class="header__element-field header__element-field--width-search">
+                            <input class="input" type="text" placeholder="Крем-брюле">
+                        </div>
+                    </li>
+                    <li class="header__element">
+                        <button class="header__element-btn" type="button">
+                            <svg class="header__element-icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="header__element-icon--fill" d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path class="header__element-icon--fill" d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg>
+                            Вход
+                        </button>
+                        <div class="header__element-field">
+                            <form class="header__element-form"  action="https://echo.htmlacademy.ru" method="POST">
+                                <input class="input" type="email" placeholder="email@example.com">
+                                <input class="input" type="password" placeholder="******">
+                                <button class="btn" type="submit">Войти</button>
+                                <div class="header__element-links">
+                                    <a class="link--dark" href="blank.html">Забыли пароль?</a><br>
+                                    <a class="link--dark" href="blank.html">Новая регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="header__element">
+                        <button class="header__element-btn" type="button">
+                            <svg class="header__element-icon" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="header__element-icon--fill" d="M5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9zM7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2z" fill="#fff"/></svg>
+                            <span class="visually-hidden">Корзина:</span>Пусто
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <p class="header__info">
+                с 10 до 20, ежедневно<br>
+                <a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a>
+            </p>
+        </div>
     </header>
-
+    <main class="main">
+        <div class="container">
+            <iframe width="100%" height="646" src="https://www.youtube.com/embed/jz40salowcc?autoplay=1&amp;loop=1&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+    </main>
     <footer class="footer">
-        <ul class="socials">
-            <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/facebook.svg" alt="" width="32" height="32"></a></li>
-            <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/vk.svg"  alt="" width="32" height="32"></a></li>
-            <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/instagram.svg" alt="" width="32" height="32"></a></li>
-            <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/twitter.svg" alt="" width="32" height="32"></a></li>
-        </ul>
-        <ul class="footer__info">
-            <li class="footer__info-item"><a class="footer__info-link" href="blank.html">Для поставщиков</a></li>
-            <li class="footer__info-item"><a class="footer__info-link" href="blank.html">Наши документы</a></li>
-            <li class="footer__info-item"><a class="footer__info-link" href="blank.html">О производстве</a></li>
-            <li class="footer__info-item"><a class="footer__info-link" href="blank.html">Экологические стандарты</a>
-            </li>
-        </ul>
-        <p class="copy">
-            <a class="copy__link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="copy__logo" src="img/decorations/htmlacademy.svg" alt="">
-            </a><br>
-            Сделано в <a class="copy__link-text" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2021
-        </p>
+        <div class="container footer--flex">
+            <ul class="socials">
+                <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/facebook.svg" alt="" width="32" height="32"></a></li>
+                <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/vk.svg"  alt="" width="32" height="32"></a></li>
+                <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/instagram.svg" alt="" width="32" height="32"></a></li>
+                <li class="socials__social"><a class="socials__social-link" href="blank.html"><img class="socials__social-icon" src="img/socials/twitter.svg" alt="" width="32" height="32"></a></li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer__info-item footer__info-item--align"><a class="link" href="blank.html">Для поставщиков</a></li>
+                <li class="footer__info-item footer__info-item--align"><a class="link" href="blank.html">Наши документы</a></li>
+                <li class="footer__info-item"><a class="link" href="blank.html">О производстве</a></li>
+                <li class="footer__info-item"><a class="link" href="blank.html">Экологические стандарты</a>
+                </li>
+            </ul>
+            <p class="copy">
+                <a class="copy__link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copy__logo" src="img/decorations/htmlacademy.svg" alt=""></a><br>
+                Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2021
+            </p>
+        </div>
     </footer>
 </body>
 
