@@ -4,6 +4,9 @@ let buttonClose = document.querySelector('.modal__btn-close'); // Кнопка �
 
 buttonOpen.onclick = function () {
     modal.style.display = "block";
+    modal.onclick = function () {
+        modal.style.display = "none";
+    }
 };
 
 buttonClose.onclick = function () {
