@@ -85,16 +85,14 @@
                     <h2 class="carousel__title visually-hidden">Лучшее комбо</h2>
                     <ul class="carousel__list">
                         <li class="carousel__item">
-                            <p class="carousel__item-name">Пломбир с помадкой<br> и клубничный щербет</p>
-                        </li>
-                        <!--
+                            <p class="carousel__item-name">Крем-брюле и пломбир<br> с малиновым джемом</p>
+                        </li>   
                         <li class="carousel__item">
                             <p class="carousel__item-name">Шоколадный пломбир<br> и лимонный сорбет</p>
                         </li>
-                        <li class="carousel__item">
-                            <p class="carousel__item-name">Крем-брюле<br> и пломбир с малиновым джемом</p>
+                        <li class="carousel__item carousel__item--active">
+                            <p class="carousel__item-name">Пломбир с помадкой<br> и клубничный щербет</p>
                         </li>
-                        -->
                     </ul>
                     <div class="carousel__control">
                         <ul class="carousel__dots">
@@ -133,8 +131,8 @@
                 <div class="container container--smaller-padding">
                     <h2 class="products__title visually-hidden">Самые "горячие" предложения</h2>
                     <ul class="products__list">
-                        <li class="product product--hot">
-                            <a class="product__link" href="catalog.html">
+                        <li class="product">
+                            <a class="product__link product__link--hot" href="catalog.html">
                                 <img class="product__img" src="img/catalog/product__orange.png" width="267" height="267" alt="Бело-ораньжевое мороженное смешанное с цитрусовой стружкой">
                                 <p class="product__price">310 ₽<span>/кг</span></p>
                                 <h3 class="product__title"><span class="link">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
@@ -143,8 +141,8 @@
                                 <button class="btn" type="button">Быстрый просмотр</button>
                             </div>
                         </li>
-                        <li class="product product--hot">
-                            <a class="product__link" href="catalog.html">
+                        <li class="product">
+                            <a class="product__link product__link--hot" href="catalog.html">
                                 <img class="product__img" src="img/catalog/product__coffee-chocolate.png" width="267" height="267" alt="Мороженное коричневого цвета присыпанное маленькими кусочками черного шоколада">
                                 <p class="product__price">380 ₽<span>/кг</span></p>
                                 <h3 class="product__title"><span class="link">Сливочно-кофейное с кусочками шоколада</span></h3>
@@ -153,21 +151,21 @@
                                 <button class="btn" type="button">Быстрый просмотр</button>
                             </div>
                         </li>
-                        <li class="product product--hot">
-                            <a class="product__link" href="catalog.html">
+                        <li class="product">
+                            <a class="product__link product__link--hot" href="catalog.html">
                                 <img class="product__img" src="img/catalog/product__strawberry.png" width="267" height="267" alt="Розовое мороженное посыпанное шоколадными сердечками белого и розового цвета сверху">
                                 <p class="product__price">355 ₽<span>/кг</span></p>
-                                <h3 class="product__title"><span class="link">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
+                                <h3 class="product__title"><span class="link">Сливочно-клубничное<br>с присыпкой из белого шоколада</span></h3>
                             </a>
                             <div class="product__curtain">
                                 <button class="btn" type="button">Быстрый просмотр</button>
                             </div>
                         </li>
-                        <li class="product product--hot">
-                            <a class="product__link" href="catalog.html">
+                        <li class="product">
+                            <a class="product__link product__link--hot" href="catalog.html">
                                 <img class="product__img" src="img/catalog/product__cream.png" width="267" height="267" alt="Мороженное золтисто-корчиневого цвета политое карамелью">
                                 <p class="product__price">415 ₽<span>/кг</span></p>
-                                <h3 class="product__title"><span class="link">Сливочное крем-брюле с карамельной подливкой</span></h3>
+                                <h3 class="product__title"><span class="link">Сливочное крем-брюле<br>с карамельной подливкой</span></h3>
                             </a>
                             <div class="product__curtain">
                                 <button class="btn" type="button">Быстрый просмотр</button>
@@ -302,8 +300,8 @@
                     </a></li>
                 </ul>
                 <ul class="footer__info">
-                    <li class="footer__info-item footer__info-item--align"><a class="link" href="blank.html">Для поставщиков</a></li>
-                    <li class="footer__info-item footer__info-item--align"><a class="link" href="blank.html">Наши документы</a></li>
+                    <li class="footer__info-item footer__info-item--special"><a class="link" href="blank.html">Для поставщиков</a></li>
+                    <li class="footer__info-item"><a class="link" href="blank.html">Наши документы</a></li>
                     <li class="footer__info-item"><a class="link" href="blank.html">О производстве</a></li>
                     <li class="footer__info-item"><a class="link" href="blank.html">Экологические стандарты</a>
                     </li>
@@ -314,22 +312,21 @@
                 </p>
             </div>
         </footer>
-        <div class="modal-fade">
-            <section class="modal">
-                <h2 class="modal__title visually-hidden">Окно обратной связи</h2>
-                <p class="slogan">Мы обязательно вам ответим!</p>
-                <svg class="btn-close modal__btn-close" width="18" height="18">
-                    <line x1="0" y1="0" x2="18" y2="18" stroke="#2C2829" stroke-width="2"></line>
-                    <line x1="18" y1="0" x2="0" y2="18" stroke="#2C2829" stroke-width="2"></line>
-                </svg>
-                <form class="modal__form"  action="https://echo.htmlacademy.ru" method="POST">
-                    <input class="input modal__input"  type="text" placeholder="Имя Фамилия">
-                    <input class="input modal__input"  type="email" placeholder="email@example.com">
-                    <textarea class="input modal__textarea" placeholder="В свободной форме"></textarea>
-                    <button class="btn modal__btn" type="submit">Отправить</button>
-                </form>
-            </section>
-        </div>
+        <section class="modal">
+            <h2 class="modal__title visually-hidden">Окно обратной связи</h2>
+            <p class="slogan">Мы обязательно вам ответим!</p>
+            <svg class="btn-close modal__btn-close" width="18" height="18">
+                <line x1="0" y1="0" x2="18" y2="18" stroke="#2C2829" stroke-width="2"></line>
+                <line x1="18" y1="0" x2="0" y2="18" stroke="#2C2829" stroke-width="2"></line>
+            </svg>
+            <form class="modal__form"  action="https://echo.htmlacademy.ru" method="POST">
+                <input class="input modal__input"  type="text" placeholder="Имя Фамилия">
+                <input class="input modal__input"  type="email" placeholder="email@example.com">
+                <textarea class="input modal__textarea" placeholder="В свободной форме"></textarea>
+                <button class="btn modal__btn" type="submit">Отправить</button>
+            </form>
+        </section>
+        <div class="modal-fade"></div>
     </div>
     <script src="js/script.js"></script>
 </body>
