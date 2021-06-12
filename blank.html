@@ -42,8 +42,8 @@
                             <svg class="header__element-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="header__element-icon-path" d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/></svg>
                             <span class="visually-hidden">Поиск</span>
                         </button>
-                        <div class="header__element-field header__element-field--width-search">
-                            <input class="input" type="text" placeholder="Крем-брюле">
+                        <div class="header__element-field header__element-field-search">
+                            <input class="input header__element-search-focused" type="text" placeholder="Крем-брюле">
                         </div>
                     </li>
                     <li class="header__element">
@@ -51,14 +51,14 @@
                             <svg class="header__element-icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="header__element-icon-path" d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path class="header__element-icon-path" d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg>
                             Вход
                         </button>
-                        <div class="header__element-field">
+                        <div class="header__element-field header__element-field-login">
                             <form class="header__element-form"  action="https://echo.htmlacademy.ru" method="POST">
-                                <input class="input" type="email" placeholder="email@example.com">
-                                <input class="input" type="password" placeholder="******">
-                                <button class="btn" type="submit">Войти</button>
+                                <input class="input header__element-login-focused" type="email" placeholder="email@example.com">
+                                <input class="input header__element-login-focused" type="password" placeholder="******">
+                                <button class="btn header__element-login-focused" type="submit">Войти</button>
                                 <div class="header__element-links">
-                                    <a class="link-dark" href="blank.html">Забыли пароль?</a><br>
-                                    <a class="link-dark" href="blank.html">Новая регистрация</a>
+                                    <a class="link-dark header__element-login-focused" href="blank.html">Забыли пароль?</a><br>
+                                    <a class="link-dark header__element-login-focused" href="blank.html">Новая регистрация</a>
                                 </div>
                             </form>
                         </div>
@@ -71,15 +71,15 @@
                     </li>
                 </ul>
             </nav>
-            <p class="header__info">
-                с 10 до 20, ежедневно<br>
+            <div class="header__info">
+                <p class="header__time">с 10 до 20, ежедневно </p>
                 <a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a>
-            </p>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="container">
-            <iframe width="1125" height="646" src="https://www.youtube.com/embed/jz40salowcc?autoplay=1&amp;loop=1&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe width="1125" height="646" src="https://www.youtube.com/embed/4wX2xBOuzRg?autoplay=1&amp;loop=1&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
     </main>
     <footer class="footer">
@@ -116,18 +116,20 @@
                 </a></li>
             </ul>
             <ul class="footer__info">
-                <li class="footer__info-item footer__info-item--align"><a class="link" href="blank.html">Для поставщиков</a></li>
-                <li class="footer__info-item footer__info-item--align"><a class="link" href="blank.html">Наши документы</a></li>
+                <li class="footer__info-item footer__info-item--special"><a class="link" href="blank.html">Для поставщиков</a></li>
+                <li class="footer__info-item"><a class="link" href="blank.html">Наши документы</a></li>
                 <li class="footer__info-item"><a class="link" href="blank.html">О производстве</a></li>
                 <li class="footer__info-item"><a class="link" href="blank.html">Экологические стандарты</a>
                 </li>
             </ul>
             <p class="copy">
-                <a class="copy__link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copy__logo" src="img/decorations/htmlacademy.svg" alt=""></a><br>
+                <a class="copy__link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copy__logo"
+                    src="img/decorations/htmlacademy.svg" width="108" height="31" alt=""></a><br>
                 Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2021
             </p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,56 +1,40 @@
-// Реализация слайдера.
-let mainPage = document.querySelector(".main-page--background"); // Элемент в котором указан фон всей страницы и мороженка.
-let icecreamsTitles = document.querySelectorAll(".carousel__item"); // Названия мороженных в слайде.
-let dots = document.querySelectorAll(".carousel__dot-btn"); // Точки слайдера.
-let background = [
-    "url(../img/decorations/icecreams__brulee-raspberries.png) 49.7% 83px no-repeat, radial-gradient(circle closest-side at 50% 358px, hsl(147, 51%, 90%), hsl(146, 11%, 57%) 150%)",
-    "url(../img/decorations/icecreams_chocolate-lemon.png) 49.7% 83px no-repeat, radial-gradient(circle closest-side at 50% 358px, hsl(211, 40%, 90%), hsl(213, 14%, 59%) 150%)",
-    "url(../img/decorations/icecreams_fondant-strawberry.png) 49.7% 83px no-repeat, radial-gradient(circle  closest-side at 50% 358px, hsl(17, 40%, 90%), hsl(17, 11%, 57%) 150%)"
-]
-let dotClassActive = "carousel__dot-btn--active";
-let icecreamsTitleClassActive = "carousel__item--active"
+function checkFocus (elementsFocus, item, focusClass) {
+    // elementsFocus - СПИСОК элементов/элемента на которых добавиться событие.
+    // item - Элемент которому добовляется/удаляется класс при фокусе/расфокусе на элемент из elementsFocus.
+    // focusClass - класс который добавиться/удалиться на item при фокусе/расфокусе на элемент из elementsFocus.
+    elementsFocus.forEach( function(element) {
+        element.addEventListener("focus", function () {
+            item.classList.add(focusClass);
+        });
+        element.addEventListener("blur", function () {
+            item.classList.remove(focusClass);
+        });
+    });
+};
 
-dots.forEach( function(element, id) {
-    element.onclick = function () {
-        // Проверяем, активна ли нажатая точки или нет.
-        if(!element.classList.contains(dotClassActive)) { 
-            // Функция удаления активного элемента (слайда) и добавление на нажатый элемент.
-            function active (classActive, array) {
-                let item = document.querySelector("."+classActive)
-                item.classList.remove(classActive);
-                array[id].classList.add(classActive)
-            };
 
-            active(dotClassActive, dots);// Изменение активного класса у точке слайдера.
-            active(icecreamsTitleClassActive, icecreamsTitles);// Изменение активного класса у названия мороженки.
+let subMenu = document.querySelector (".menu__sub-menu"); // Подменю котолога.
+let subMenuItems = document.querySelectorAll(".menu__sub-menu-item-link"); // Элементы подменю котолога.
+checkFocus(subMenuItems, subMenu, "menu__sub-menu--focus");
 
-            mainPage.style.background = background[id];// Меняем фон и картинку мороженки.
-        };
-    }
+
+let headerSearch = document.querySelector(".header__element-field-search"); // Поле для поиска.
+let headerSearchItems = document.querySelectorAll(".header__element-search-focused"); // Поле поиска
+checkFocus(headerSearchItems, headerSearch, "header__element-field-search--focus");
+
+
+let headerLogin = document.querySelector(".header__element-field-login"); // Блок для входа в аккаунт.
+let headerLoginItems = document.querySelectorAll(".header__element-login-focused"); // Все ссылки, инпуты и кнопки.
+checkFocus(headerLoginItems, headerLogin, "header__element-field-login--focus");
+
+
+let headerBasket = document.querySelector(".header__element-field-basket"); // корзина с товарами.
+let headerBasketItems = document.querySelectorAll(".header__element-field-basket--focused"); // Кнопка оформления заказа.
+checkFocus(headerBasketItems, headerBasket, "header__element-field-basket--focus");
+
+
+let products = document.querySelectorAll(".product"); // Все товары.
+products.forEach( function(item) {
+    let productButton = item.querySelectorAll(".btn"); // Кнопка внутри блока товара "Быстрый просмотр".
+    checkFocus(productButton, item, "product--focus");
 });
-
-
-
-
-
-
-// Реализация модального окна.
-let buttonOpen = document.querySelector('.info__btn'); // Кнопка "обратная связь" которая открывает иодальное окно.
-let modal = document.querySelector('.modal') // Модальное окно.
-let modalFade = document.querySelector('.modal-fade'); // Оверлэй модального окна.
-let buttonClose = document.querySelector('.modal__btn-close'); // Кнопка закрытия модального окна.
-
-buttonOpen.onclick = function () {
-    modalFade.style.display = "block";
-    modal.style.display = "block";
-};
-
-modalFade.onclick = function () {
-    modalFade.style.display = "none";
-    modal.style.display =  "none";
-};
-
-buttonClose.onclick = function () {
-    modalFade.style.display = "none";
-    modal.style.display = "none";
-};
