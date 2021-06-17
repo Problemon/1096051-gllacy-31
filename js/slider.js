@@ -10,14 +10,19 @@ dots.forEach( function(element, id) {
         // Проверяем, активна ли нажатая точки или нет.
         if(!element.classList.contains(dotClassActive)) { 
             // Функция удаления активного элемента (слайда) и добавление на нажатый элемент.
-            function active (classActive, array) {
+            function active (classActive, array, button) {
                 let item = document.querySelector("."+classActive)
                 item.classList.remove(classActive);
                 array[id].classList.add(classActive)
+
+                if (button) {
+                    item.removeAttribute("disabled");
+                    array[id].setAttribute("disabled", "null");
+                }
             };
 
-            active(dotClassActive, dots);// Изменение активного класса у точке слайдера.
-            active(icecreamsTitleClassActive, icecreamsTitles);// Изменение активного класса у названия мороженки.
+            active(dotClassActive, dots, true);// Изменение активного класса у точке слайдера.
+            active(icecreamsTitleClassActive, icecreamsTitles, false);// Изменение активного класса у названия мороженки.
 
             mainPage.classList.remove(mainPage.classList[1]); // Удаление класса с прошлым слайдом.
             mainPage.classList.add("main-page--" + (id + 1)); // Добавление класса с новым слайдом.

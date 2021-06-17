@@ -29,7 +29,7 @@ checkFocus(headerLoginItems, headerLogin, "header__element-field-login--focus");
 
 
 let headerBasket = document.querySelector(".header__element-field-basket"); // корзина с товарами.
-let headerBasketItems = document.querySelectorAll(".header__element-field-basket--focused"); // Кнопка оформления заказа.
+let headerBasketItems = document.querySelectorAll(".header__element-field-basket-focused"); // Кнопка оформления заказа.
 checkFocus(headerBasketItems, headerBasket, "header__element-field-basket--focus");
 
 

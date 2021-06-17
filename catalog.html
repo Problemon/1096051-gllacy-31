@@ -13,7 +13,8 @@
     <title>HTML Academy: Глейси</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/focus-visible.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,7 +29,7 @@
                         <a class="menu__item-link menu__here" href="catalog.html"><span>Каталог</span></a>
                         <ul class="menu__sub-menu">
                             <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item-header" href="blank.html">Новинки</a></li>
-                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__here" href="catalog.html">Сливочное</a></li>
+                            <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item-link--padding menu__here">Сливочное</a></li>
                             <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="blank.html">Щербеты</a></li>
                             <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="blank.html">Фруктовый лед</a></li>
                             <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item-footer" href="blank.html">Мелорин</a></li>
@@ -59,10 +60,10 @@
                                 <label class="visually-hidden" for="input-email">Ввод электронной почты</label>
                                 <input class="input header__element-login-focused" id="input-email" type="email" placeholder="email@example.com">
                                 <label class="visually-hidden" for="input-password">Ввод пароля</label>
-                                <input class="input header__element-login-focused" id="input-password" type="password" placeholder="******">
-                                <button class="btn header__element-login-focused" type="submit">Войти</button>
+                                <input class="input input--dots header__element-login-focused" id="input-password" type="password" placeholder="......">
+                                <button class="btn  header__element-login-focused" type="submit">Войти</button>
                                 <div class="header__element-links">
-                                    <a class="link-dark header__element-login-focused" href="blank.html">Забыли пароль?</a><br>
+                                    <a class="link-dark header__element-login-focused" href="blank.html">Забыли пароль?</a>
                                     <a class="link-dark header__element-login-focused" href="blank.html">Новая регистрация</a>
                                 </div>
                             </form>
@@ -80,7 +81,7 @@
                         <div class="header__element-field header__element-field-basket">
                             <ul class="header__element-list">
                                 <li class="header__element-item">
-                                    <button class="btn-close header__element-field-basket--focused" type="button">
+                                    <button class="btn-close header__element-btn-close header__element-field-basket-focused" type="button">
                                         <svg class="btn-close-icon" width="11" height="11">
                                             <line x1="0" y1="0" x2="11" y2="11" stroke="#2C2829"></line>
                                             <line x1="11" y1="0" x2="0" y2="11" stroke="#2C2829"></line>
@@ -93,7 +94,7 @@
                                     <p class="header__element-item-price">300 руб.</p>
                                 </li>
                                 <li class="header__element-item">
-                                    <button class="btn-close header__element-field-basket--focused" type="button">
+                                    <button class="btn-close header__element-btn-close header__element-field-basket-focused" type="button">
                                         <svg class="btn-close-icon" width="11" height="11">
                                             <line x1="0" y1="0" x2="11" y2="11" stroke="#2C2829"></line>
                                             <line x1="11" y1="0" x2="0" y2="11" stroke="#2C2829"></line>
@@ -108,7 +109,7 @@
                             </ul>
                             <div class="header__element-total">
                                 <p class="header__element-total-text">Итого: <span>750 руб.</span></p>
-                                <button class="btn header__element-field-basket--focused" type="submit">Оформить заказ</button>
+                                <button class="btn header__element-total-btn header__element-field-basket-focused" type="submit">Оформить заказ</button>
                             </div>
                         </div>
                     </li>
@@ -149,9 +150,9 @@
                             <span>Цена: 100 ₽ – 500 ₽</span>
                             <div class="filter__item filter__price">
                                 <div class="filter__price-range">
-                                    <div class="filter__price-slider-first"></div>
+                                    <button class="filter__price-slider filter__price-slider-first"></button>
                                     <div class="filter__price-bar"></div>
-                                    <div class="filter__price-slider-last"></div>
+                                    <button class="filter__price-slider filter__price-slider-last"></button>
                                 </div>
                             </div>
                         </div>
@@ -272,11 +273,10 @@
                     <li class="product">
                         <div class="div">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</span></h3>
                             <img class="product__img" src="img/catalog/product__orange.png" width="267" height="267"
                                 alt="Бело-ораньжевое мороженное смешанное с цитрусовой стружкой">
                             <p class="product__price">310 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочное с апельсиновым<br> джемом и цитрусовой
-                                    стружкой</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -285,12 +285,11 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочно-кофейное с кусочками шоколада</span></h3>
                             <img class="product__img" src="img/catalog/product__coffee-chocolate.png" width="267"
                                 height="267"
                                 alt="Мороженное коричневого цвета присыпанное маленькими кусочками черного шоколада">
                             <p class="product__price">380 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочно-кофейное с кусочками шоколада</span>
-                            </h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -298,10 +297,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочно-клубничное с<br>присыпкой из белого шоколада</span></h3>
                             <img class="product__img" src="img/catalog/product__strawberry.png" width="267" height="267"
                                 alt="Розовое мороженное посыпанное шоколадными сердечками белого и розового цвета сверху">
                             <p class="product__price">355 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочно-клубничное с<br>присыпкой из белого шоколада</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -309,10 +308,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочное крем-брюле<br>с карамельной подливкой</span></h3>
                             <img class="product__img" src="img/catalog/product__cream.png" width="267" height="267"
                                 alt="Мороженное золтисто-корчиневого цвета политое карамелью">
                             <p class="product__price">415 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочное крем-брюле<br>с карамельной подливкой</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -320,10 +319,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочное с брусничным<br>джемом</span></h3>
                             <img class="product__img" src="img/catalog/product__brusnik.png" width="267" height="267"
                                 alt="Бело-розовое мороженное ">
                             <p class="product__price">325 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочное с брусничным<br>джемом</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -331,11 +330,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочно-черничное с цельными ягодами черники</span></h3>
                             <img class="product__img" src="img/catalog/product__blueberry.png" width="267" height="267"
                                 alt="Мороженное сероватого цвета с тремя ягодами черники по середине">
                             <p class="product__price">410 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочно-черничное с цельными ягодами
-                                    черники</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -343,11 +341,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочно-лимонное с<br>карамельной присыпкой</span></h3>
                             <img class="product__img" src="img/catalog/product__lemon.png" width="267" height="267"
                                 alt="Мороженное желтого цвета с маленькими кусочками карамели">
                             <p class="product__price">315 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочно-лимонное с<br>карамельной
-                                    присыпкой</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -355,10 +352,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочное с шоколадной<br>стружкой</span></h3>
                             <img class="product__img" src="img/catalog/product__chocolate-chips.png" width="267"
                                 height="267" alt="Белое мороженное с шоколоданой крошкой сверху">
                             <p class="product__price">320 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочное с шоколадной<br>стружкой</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -366,11 +363,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочно-ванильное<br>с кусочками шоколада</span></h3>
                             <img class="product__img" src="img/catalog/product__vanilla-chocolate.png" width="267"
                                 height="267" alt="Мороженное цвета ванили с несколькими кусочками шоколада сверху">
                             <p class="product__price">440 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочно-ванильное<br>с кусочками шоколада</span>
-                            </h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -378,10 +374,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочноe с ментоловым<br>сиропом</span></h3>
                             <img class="product__img" src="img/catalog/product__menthol.png" width="267" height="267"
                                 alt="Мороженное берюзового цвета">
                             <p class="product__price">435 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочноe с ментоловым<br>сиропом</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -389,11 +385,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочное с кусочками черного<br>шоколада</span></h3>
                             <img class="product__img" src="img/catalog/product__black-chocolate.png" width="267"
                                 height="267" alt="Белое мороженое с раскрошенным печеньем по середине">
                             <p class="product__price">355 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочное с кусочками черного<br>шоколада</span>
-                            </h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -401,10 +396,10 @@
                     </li>
                     <li class="product">
                         <a class="product__link" href="catalog.html">
+                            <h3 class="product__title"><span class="link">Сливочное с мятным сиропом</span></h3>
                             <img class="product__img" src="img/catalog/product__mint.png" width="267" height="267"
                                 alt="Зеленое мороженое">
                             <p class="product__price">420 ₽<span>/кг</span></p>
-                            <h3 class="product__title"><span class="link">Сливочное с мятным сиропом</span></h3>
                         </a>
                         <div class="product__curtain">
                             <button class="btn" type="button">Быстрый просмотр</button>
@@ -412,21 +407,25 @@
                     </li>
                 </ul>
                 <ul class="products__dots">
-                    <li class="products__arrow"><a class="products__arrow-link">
+                    <li class="products__arrow">
+                        <a class="products__arrow-link">
                             <svg class="products__arrow-icon products__arrow-icon--disabled" width="7" height="12">
                                 <polyline points="7,0 0,6 7,12" />
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="products__dot"><a class="products__dot-link products__dot-link--active">1</a></li>
                     <li class="products__dot"><a class="products__dot-link" href="#">2</a></li>
                     <li class="products__dot"><a class="products__dot-link" href="#">3</a></li>
                     <li class="products__dot"><a class="products__dot-link" href="#">4</a></li>
                     <li class="products__dot"><a class="products__dot-link" href="#">5</a></li>
-                    <li class="products__arrow"><a class="products__arrow-link">
+                    <li class="products__arrow">
+                        <a class="products__arrow-link" href="#">
                             <svg class="products__arrow-icon" width="7" height="12">
                                 <polyline points="0,0 7,6 0,12" />
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -479,7 +478,8 @@
             </p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,8 @@
     <title>HTML Academy: Глейси</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/focus-visible.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,7 +29,7 @@
                             <a class="menu__item-link" href="catalog.html"><span>Каталог</span></a>
                             <ul class="menu__sub-menu">
                                 <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item-header" href="blank.html">Новинки</a></li>
-                                <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="catalog.html">Сливочное</a></li>
+                                <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item-link--padding" href="catalog.html">Сливочное</a></li>
                                 <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="blank.html">Щербеты</a></li>
                                 <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link" href="blank.html">Фруктовый лед</a></li>
                                 <li class="menu__sub-menu-item"><a class="menu__sub-menu-item-link menu__sub-menu-item-footer" href="blank.html">Мелорин</a></li>
@@ -58,10 +59,10 @@
                                     <label class="visually-hidden" for="input-email">Ввод электронной почты</label>
                                     <input class="input header__element-login-focused" id="input-email" type="email" placeholder="email@example.com">
                                     <label class="visually-hidden" for="input-password">Ввод пароля</label>
-                                    <input class="input header__element-login-focused" id="input-password" type="password" placeholder="******">
-                                    <button class="btn header__element-login-focused" type="submit">Войти</button>
+                                    <input class="input input--dots header__element-login-focused" id="input-password" type="password" placeholder="......">
+                                    <button class="btn  header__element-login-focused" type="submit">Войти</button>
                                     <div class="header__element-links">
-                                        <a class="link-dark header__element-login-focused" href="blank.html">Забыли пароль?</a><br>
+                                        <a class="link-dark header__element-login-focused" href="blank.html">Забыли пароль?</a>
                                         <a class="link-dark header__element-login-focused" href="blank.html">Новая регистрация</a>
                                     </div>
                                 </form>
@@ -101,7 +102,7 @@
                         <ul class="carousel__dots">
                             <li class="carousel__dot"><button class="carousel__dot-btn" aria-label="Первый слайд"></button></li>
                             <li class="carousel__dot"><button class="carousel__dot-btn" aria-label="Второй слайд"></button></li>
-                            <li class="carousel__dot"><button class="carousel__dot-btn carousel__dot-btn--active" aria-label="Третий слайд"></button></li>
+                            <li class="carousel__dot"><button class="carousel__dot-btn carousel__dot-btn--active" aria-label="Третий слайд" disabled></button></li>
                         </ul>
                         <a class="btn carousel__btn" href="catalog.html">Давайте оба!</a>
                     </div>
@@ -136,9 +137,9 @@
                     <ul class="products__list">
                         <li class="product">
                             <a class="product__link product__link--hot" href="catalog.html">
+                                <h3 class="product__title"><span class="link">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</span></h3>
                                 <img class="product__img" src="img/catalog/product__orange.png" width="267" height="267" alt="Бело-ораньжевое мороженное смешанное с цитрусовой стружкой">
                                 <p class="product__price">310 ₽<span>/кг</span></p>
-                                <h3 class="product__title"><span class="link">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</span></h3>
                             </a>
                             <div class="product__curtain">
                                 <button class="btn" type="button">Быстрый просмотр</button>
@@ -146,9 +147,9 @@
                         </li>
                         <li class="product">
                             <a class="product__link product__link--hot" href="catalog.html">
+                                <h3 class="product__title"><span class="link">Сливочно-кофейное с кусочками шоколада</span></h3>
                                 <img class="product__img" src="img/catalog/product__coffee-chocolate.png" width="267" height="267" alt="Мороженное коричневого цвета присыпанное маленькими кусочками черного шоколада">
                                 <p class="product__price">380 ₽<span>/кг</span></p>
-                                <h3 class="product__title"><span class="link">Сливочно-кофейное с кусочками шоколада</span></h3>
                             </a>
                             <div class="product__curtain">
                                 <button class="btn" type="button">Быстрый просмотр</button>
@@ -156,9 +157,9 @@
                         </li>
                         <li class="product">
                             <a class="product__link product__link--hot" href="catalog.html">
+                                <h3 class="product__title"><span class="link">Сливочно-клубничное<br>с присыпкой из белого шоколада</span></h3>
                                 <img class="product__img" src="img/catalog/product__strawberry.png" width="267" height="267" alt="Розовое мороженное посыпанное шоколадными сердечками белого и розового цвета сверху">
                                 <p class="product__price">355 ₽<span>/кг</span></p>
-                                <h3 class="product__title"><span class="link">Сливочно-клубничное<br>с присыпкой из белого шоколада</span></h3>
                             </a>
                             <div class="product__curtain">
                                 <button class="btn" type="button">Быстрый просмотр</button>
@@ -166,9 +167,9 @@
                         </li>
                         <li class="product">
                             <a class="product__link product__link--hot" href="catalog.html">
+                                <h3 class="product__title"><span class="link">Сливочное крем-брюле<br>с карамельной подливкой</span></h3>
                                 <img class="product__img" src="img/catalog/product__cream.png" width="267" height="267" alt="Мороженное золтисто-корчиневого цвета политое карамелью">
                                 <p class="product__price">415 ₽<span>/кг</span></p>
-                                <h3 class="product__title"><span class="link">Сливочное крем-брюле<br>с карамельной подливкой</span></h3>
                             </a>
                             <div class="product__curtain">
                                 <button class="btn" type="button">Быстрый просмотр</button>
@@ -219,7 +220,7 @@
                     <article class="blog">
                         <h2 class="blog__title visually-hidden">Блог</h2>
                         <p class="blog__text">Новое в нашем блоге</p>
-                        <a class="blog__link" href="blank.html">10 способов сервировки фруктовых щербетов<br> к столу</a>
+                        <a class="blog__link" href="blank.html">10 способов сервировки фруктовых щербетов к<br> столу</a>
                     </article>
                     <section class="mailing ">
                         <div class="mailing__inner">
@@ -230,7 +231,7 @@
                                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                             </p>
                             <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
-                                <label class="mailing__label" for="mailing-email">Введите почту</label>
+                                <label class="mailing__label visually-hidden" for="mailing-email">Введите почту</label>
                                 <input class="input" id="mailing-email" type="email" name="email" placeholder="email@example.com">
                                 <button class="btn mailing__btn" type="submit">Отправить</button>
                             </form>
@@ -259,7 +260,7 @@
                             </li>
                             <li class="info__item">
                                 <p class="info__text">
-                                    Для заказов по телефону:<br>
+                                    <span>Для заказов по телефону:</span>
                                     <a class="info__link" href="tel:+78005558628">+7 800 555-86-28</a><br>
                                     (с 10 до 20 ежедневно)
                                 </p>
@@ -328,18 +329,19 @@
             </button>
             <form class="modal__form"  action="https://echo.htmlacademy.ru" method="POST">
                 <label class="modal__label visually-hidden" for="modal-name">Введите ваше имя</label>
-                <input class="input modal__input" id="modla-name" type="text" placeholder="Имя Фамилия">
+                <input class="input modal__input" id="modal-name" type="text" placeholder="Имя Фамилия" required>
                 <label class="modal__label visually-hidden" for="modal-email">Введите вашу почту</label>
-                <input class="input modal__input" id="modla-email" type="email" placeholder="email@example.com">
+                <input class="input modal__input" id="modal-email" type="email" placeholder="email@example.com" required>
                 <textarea class="input modal__textarea" placeholder="В свободной форме"></textarea>
                 <button class="btn modal__btn" type="submit">Отправить</button>
             </form>
         </section>
         <div class="modal-fade"></div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
