@@ -46,11 +46,12 @@ function modalShow (value) {
                 }, 300)
             };
         }
-      });
+    });
 };
 
-buttonOpen.onclick = function () {
+buttonOpen.onclick = function (evt) {
     modalShow(true);
+    evt.preventDefault();
 };
 
 modalFade.onclick = function () {
@@ -81,6 +82,6 @@ modalBtn.addEventListener("click", function (event) {
             
         };
     });
-    event.preventDefault();
+    
 });
 

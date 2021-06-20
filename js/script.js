@@ -1,3 +1,14 @@
+function hoverUp (elementsHover, item, hoverClass) {
+    elementsHover.forEach( function(element) {
+        element.addEventListener("mouseover", function () {
+            item.classList.add(hoverClass);
+        });
+        element.addEventListener("mouseout", function () {
+            item.classList.remove(hoverClass);
+        });
+    });
+};
+
 function checkFocus (elementsFocus, item, focusClass) {
     // elementsFocus - СПИСОК элементов/элемента на которых добавиться событие.
     // item - Элемент которому добовляется/удаляется класс при фокусе/расфокусе на элемент из elementsFocus.
@@ -35,6 +46,8 @@ checkFocus(headerBasketItems, headerBasket, "header__element-field-basket--focus
 
 let products = document.querySelectorAll(".product"); // Все товары.
 products.forEach( function(item) {
+    let productCurtain = item.querySelectorAll(".product__curtain");
     let productButton = item.querySelectorAll(".btn"); // Кнопка внутри блока товара "Быстрый просмотр".
     checkFocus(productButton, item, "product--focus");
+    hoverUp(productCurtain, item , "product--focus");
 });

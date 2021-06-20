@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/focus-visible.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="index-body">
@@ -36,7 +36,7 @@
                             </ul>
                         </li>
                         <li class="menu__item"><a class="menu__item-link" href="blank.html"><span>Доставка и оплата</span></a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="blank.html"><span>О компании</span></a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="blank.html"><span>О&nbsp;компании</span></a></li>
                     </ul>
                     <ul class="header__menu">
                         <li class="header__element">
@@ -77,13 +77,13 @@
                     </ul>
                 </nav>
                 <div class="header__info">
-                    <p class="header__time">с 10 до 20, ежедневно </p>
+                    <p class="header__time">с&nbsp;10 до&nbsp;20, ежедневно</p>
                     <a class="header__phone" href="tel:+78124502525">8 812 450-25-25</a>
                 </div>
             </div>
         </header>
         <main class="main">
-            <h1 class="main__title visually-hidden">Магазин мороженного "Глейси"</h1>
+            <h1 class="main__title visually-hidden">Магазин мороженного Магазин мороженного &laquo;Глейси&raquo;</h1>
             <section class="carousel">
                 <div class="container">
                     <h2 class="carousel__title visually-hidden">Лучшее комбо</h2>
@@ -100,9 +100,9 @@
                     </ul>
                     <div class="carousel__control">
                         <ul class="carousel__dots">
-                            <li class="carousel__dot"><button class="carousel__dot-btn" aria-label="Первый слайд"></button></li>
-                            <li class="carousel__dot"><button class="carousel__dot-btn" aria-label="Второй слайд"></button></li>
-                            <li class="carousel__dot"><button class="carousel__dot-btn carousel__dot-btn--active" aria-label="Третий слайд" disabled></button></li>
+                            <li class="carousel__dot"><button class="carousel__dot-btn" type="button" aria-label="Первый слайд"></button></li>
+                            <li class="carousel__dot"><button class="carousel__dot-btn" type="button" aria-label="Второй слайд"></button></li>
+                            <li class="carousel__dot"><button class="carousel__dot-btn carousel__dot-btn--active" type="button" aria-label="Третий слайд" disabled></button></li>
                         </ul>
                         <a class="btn carousel__btn" href="catalog.html">Давайте оба!</a>
                     </div>
@@ -183,7 +183,7 @@
                     <div class="about__inner">
                         <h2 class="about__title visually-hidden">О нас</h2>
                         <p class="about__description">
-                            Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
+                            <dfn>Магазин Глэйси</dfn> – это онлайн и офлайн-магазин по продаже мороженого
                             собственного производства на развес
                         </p>
                         <ul class="about__benefits">
@@ -266,7 +266,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <button class="btn info__btn" type="button">Форма обратной связи</button>
+                        <a class="btn info__btn" href="modal.html">Форма обратной связи</a>
                     </address>
                 </div>
             </section>
@@ -329,10 +329,10 @@
             </button>
             <form class="modal__form"  action="https://echo.htmlacademy.ru" method="POST">
                 <label class="modal__label visually-hidden" for="modal-name">Введите ваше имя</label>
-                <input class="input modal__input" id="modal-name" type="text" placeholder="Имя Фамилия" required>
+                <input class="input modal__input" id="modal-name" type="text" name="name" placeholder="Имя Фамилия" required>
                 <label class="modal__label visually-hidden" for="modal-email">Введите вашу почту</label>
-                <input class="input modal__input" id="modal-email" type="email" placeholder="email@example.com" required>
-                <textarea class="input modal__textarea" placeholder="В свободной форме"></textarea>
+                <input class="input modal__input" id="modal-email" type="email" name="email" placeholder="email@example.com" required>
+                <textarea class="input modal__textarea" name="comment" placeholder="В свободной форме"></textarea>
                 <button class="btn modal__btn" type="submit">Отправить</button>
             </form>
         </section>
